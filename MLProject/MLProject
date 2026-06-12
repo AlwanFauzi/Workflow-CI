@@ -1,0 +1,23 @@
+name: house_price_ci
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      data_dir:
+        type: string
+        default: "../namadataset_preprocessing"
+      n_estimators:
+        type: int
+        default: 300
+      max_depth:
+        type: string
+        default: "None"
+      min_samples_split:
+        type: int
+        default: 2
+      min_samples_leaf:
+        type: int
+        default: 1
+    command: "python modelling.py --data_dir {data_dir} --n_estimators {n_estimators} --max_depth {max_depth} --min_samples_split {min_samples_split} --min_samples_leaf {min_samples_leaf}"
