@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/860031498586689202/283cfb89bc4f4ac0bd306358465438c7/artifacts
+end_time: 1781336093555
+entry_point_name: ''
+experiment_id: '860031498586689202'
+lifecycle_stage: active
+run_id: 283cfb89bc4f4ac0bd306358465438c7
+run_name: suave-goose-222
+run_uuid: 283cfb89bc4f4ac0bd306358465438c7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1781336083002
+status: 3
+tags: []
+user_id: runner
