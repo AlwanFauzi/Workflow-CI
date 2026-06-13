@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/860031498586689202/cc5fcd4099e54585a55327608864df39/artifacts
+end_time: 1781334492671
+entry_point_name: ''
+experiment_id: '860031498586689202'
+lifecycle_stage: active
+run_id: cc5fcd4099e54585a55327608864df39
+run_name: abrasive-eel-614
+run_uuid: cc5fcd4099e54585a55327608864df39
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1781334482830
+status: 3
+tags: []
+user_id: runner

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/860031498586689202/82506bc191dd4293878a2a60fb84e873/artifacts
+end_time: 1781334492227
+entry_point_name: ''
+experiment_id: '860031498586689202'
+lifecycle_stage: active
+run_id: 82506bc191dd4293878a2a60fb84e873
+run_name: incongruous-rook-346
+run_uuid: 82506bc191dd4293878a2a60fb84e873
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1781334492219
+status: 3
+tags: []
+user_id: runner
