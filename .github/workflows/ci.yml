@@ -30,18 +30,12 @@ jobs:
             -P n_estimators=300 \
             -P max_depth=None \
             -P min_samples_split=2 \
-            -P min_samples_leaf=1
+            -P min_samples_leaf=1 | tee mlflow_run.log
 
       - name: Get latest run id
         id: get_run_id
         run: |
-          RUN_ID=$(python -c "
-          import mlflow
-          client = mlflow.tracking.MlflowClient(tracking_uri='file:./mlruns')
-          exp = client.get_experiment_by_name('house-price-ci')
-          runs = client.search_runs([exp.experiment_id], order_by=['attributes.start_time DESC'], max_results=1)
-          print(runs[0].info.run_id)
-          ")
+          RUN_ID=$(grep -oE 'MLFLOW_RUN_ID=[a-f0-9]+' mlflow_run.log | tail -1 | cut -d= -f2)
           echo "run_id=$RUN_ID" >> "$GITHUB_OUTPUT"
           echo "Latest run id: $RUN_ID"
 

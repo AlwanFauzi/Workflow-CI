@@ -49,30 +49,33 @@ def main():
 
     X_train, X_test, y_train, y_test = load_dataset(args.data_dir)
 
-    # `mlflow run` sudah membuka run aktif (MLFLOW_RUN_ID/MLFLOW_EXPERIMENT_ID di-set
-    # oleh MLflow CLI), sehingga di sini cukup memakai run yang sedang aktif.
-    model = RandomForestRegressor(
-        n_estimators=args.n_estimators,
-        max_depth=max_depth,
-        min_samples_split=args.min_samples_split,
-        min_samples_leaf=args.min_samples_leaf,
-        random_state=42,
-        n_jobs=-1,
-    )
-    model.fit(X_train, y_train)
+    # Buka/lanjutkan run secara eksplisit agar model & metrik (lewat autolog)
+    # tercatat di run yang sama, lalu run_id-nya dicetak supaya workflow CI
+    # bisa mengambil run yang BENAR-BENAR memiliki artefak `model`.
+    with mlflow.start_run() as run:
+        model = RandomForestRegressor(
+            n_estimators=args.n_estimators,
+            max_depth=max_depth,
+            min_samples_split=args.min_samples_split,
+            min_samples_leaf=args.min_samples_leaf,
+            random_state=42,
+            n_jobs=-1,
+        )
+        model.fit(X_train, y_train)
 
-    y_pred = model.predict(X_test)
-    mae = mean_absolute_error(y_test, y_pred)
-    rmse = mean_squared_error(y_test, y_pred) ** 0.5
-    r2 = r2_score(y_test, y_pred)
+        y_pred = model.predict(X_test)
+        mae = mean_absolute_error(y_test, y_pred)
+        rmse = mean_squared_error(y_test, y_pred) ** 0.5
+        r2 = r2_score(y_test, y_pred)
 
-    mlflow.log_metric("test_mae", mae)
-    mlflow.log_metric("test_rmse", rmse)
-    mlflow.log_metric("test_r2", r2)
+        mlflow.log_metric("test_mae", mae)
+        mlflow.log_metric("test_rmse", rmse)
+        mlflow.log_metric("test_r2", r2)
 
-    print(f"Test MAE : {mae:.5f}")
-    print(f"Test RMSE: {rmse:.5f}")
-    print(f"Test R2  : {r2:.5f}")
+        print(f"Test MAE : {mae:.5f}")
+        print(f"Test RMSE: {rmse:.5f}")
+        print(f"Test R2  : {r2:.5f}")
+        print(f"MLFLOW_RUN_ID={run.info.run_id}")
 
 
 if __name__ == "__main__":
