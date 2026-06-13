@@ -21,7 +21,7 @@ TARGET_COL = "SalePrice"
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--data_dir", type=str, default="../namadataset_preprocessing")
+    parser.add_argument("--data_dir", type=str, default="../house-prices-advanced-regression-techniques_preprocessing")
     parser.add_argument("--n_estimators", type=int, default=300)
     parser.add_argument("--max_depth", type=str, default="None")
     parser.add_argument("--min_samples_split", type=int, default=2)

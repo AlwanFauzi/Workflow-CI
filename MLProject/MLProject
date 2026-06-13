@@ -7,7 +7,7 @@ entry_points:
     parameters:
       data_dir:
         type: string
-        default: "../namadataset_preprocessing"
+        default: "../house-prices-advanced-regression-techniques_preprocessing"
       n_estimators:
         type: int
         default: 300

@@ -5,7 +5,7 @@ Repository ini berisi MLflow Project & GitHub Actions workflow CI untuk submissi
 
 ## Struktur
 - `MLProject/` — MLflow Project (`MLProject`, `conda.yaml`, `modelling.py`).
-- `namadataset_preprocessing/` — dataset siap latih (`train_preprocessed.csv`, `test_preprocessed.csv`).
+- `house-prices-advanced-regression-techniques_preprocessing/` — dataset siap latih (`train_preprocessed.csv`, `test_preprocessed.csv`).
 - `.github/workflows/ci.yml` — workflow CI yang:
   1. Menjalankan `mlflow run MLProject` untuk retraining otomatis.
   2. Mengunggah & mem-commit hasil tracking (`mlruns/`) ke repository.
@@ -15,7 +15,7 @@ Repository ini berisi MLflow Project & GitHub Actions workflow CI untuk submissi
 ## Menjalankan secara lokal
 ```bash
 pip install mlflow==2.19.0 pandas numpy scikit-learn matplotlib
-mlflow run ./MLProject --env-manager=local -P data_dir=$(pwd)/namadataset_preprocessing
+mlflow run ./MLProject --env-manager=local -P data_dir=$(pwd)/house-prices-advanced-regression-techniques_preprocessing
 ```
 
 ## Konfigurasi Secrets GitHub (wajib untuk push Docker image)

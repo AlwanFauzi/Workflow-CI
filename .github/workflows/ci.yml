@@ -26,7 +26,7 @@ jobs:
       - name: Run MLflow Project (retraining)
         run: |
           mlflow run ./MLProject --env-manager=local --experiment-name house-price-ci \
-            -P data_dir=$(pwd)/namadataset_preprocessing \
+            -P data_dir=$(pwd)/house-prices-advanced-regression-techniques_preprocessing \
             -P n_estimators=300 \
             -P max_depth=None \
             -P min_samples_split=2 \
