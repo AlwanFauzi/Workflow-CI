@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/860031498586689202/bd0a353b8d244359b3814fef515744d2/artifacts
+end_time: 1781352334255
+entry_point_name: ''
+experiment_id: '860031498586689202'
+lifecycle_stage: active
+run_id: bd0a353b8d244359b3814fef515744d2
+run_name: wise-trout-887
+run_uuid: bd0a353b8d244359b3814fef515744d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1781352331166
+status: 4
+tags: []
+user_id: runner
