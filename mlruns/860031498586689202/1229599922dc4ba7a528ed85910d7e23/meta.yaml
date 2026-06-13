@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/860031498586689202/1229599922dc4ba7a528ed85910d7e23/artifacts
+end_time: 1781335010535
+entry_point_name: ''
+experiment_id: '860031498586689202'
+lifecycle_stage: active
+run_id: 1229599922dc4ba7a528ed85910d7e23
+run_name: upbeat-owl-291
+run_uuid: 1229599922dc4ba7a528ed85910d7e23
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1781335000129
+status: 3
+tags: []
+user_id: runner
