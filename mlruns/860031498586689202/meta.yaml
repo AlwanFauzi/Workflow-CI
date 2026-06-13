@@ -1,0 +1,6 @@
+artifact_location: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/860031498586689202
+creation_time: 1781334347305
+experiment_id: '860031498586689202'
+last_update_time: 1781334347305
+lifecycle_stage: active
+name: house-price-ci

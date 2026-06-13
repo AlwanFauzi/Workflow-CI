@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/860031498586689202/926ec853f153468e921b4e9604486e77/artifacts
+end_time: 1781334357270
+entry_point_name: ''
+experiment_id: '860031498586689202'
+lifecycle_stage: active
+run_id: 926ec853f153468e921b4e9604486e77
+run_name: popular-panda-709
+run_uuid: 926ec853f153468e921b4e9604486e77
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1781334357262
+status: 3
+tags: []
+user_id: runner
