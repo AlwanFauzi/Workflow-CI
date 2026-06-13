@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/860031498586689202/3e273f9d377c42309e2d2e4d51481c58/artifacts
+end_time: 1781352993422
+entry_point_name: ''
+experiment_id: '860031498586689202'
+lifecycle_stage: active
+run_id: 3e273f9d377c42309e2d2e4d51481c58
+run_name: resilient-chimp-177
+run_uuid: 3e273f9d377c42309e2d2e4d51481c58
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1781352983320
+status: 3
+tags: []
+user_id: runner
