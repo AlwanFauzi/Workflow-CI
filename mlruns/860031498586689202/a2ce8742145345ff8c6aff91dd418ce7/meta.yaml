@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/Workflow-CI/Workflow-CI/mlruns/860031498586689202/a2ce8742145345ff8c6aff91dd418ce7/artifacts
+end_time: 1781337002477
+entry_point_name: ''
+experiment_id: '860031498586689202'
+lifecycle_stage: active
+run_id: a2ce8742145345ff8c6aff91dd418ce7
+run_name: luminous-bird-767
+run_uuid: a2ce8742145345ff8c6aff91dd418ce7
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1781336992416
+status: 3
+tags: []
+user_id: runner
